@@ -18,7 +18,7 @@
  * If statements are not specifically covered in the lesson this module, but review module 2 flow control section for an overview if needed.
  * Resources: https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/langCon_apex_if_else.htm 
  * 
- * @author Your Name
+ * @author Hallie Vanderhoof
  */
 
 public with sharing class VariablesDataTypesOperators {
@@ -32,7 +32,12 @@ public with sharing class VariablesDataTypesOperators {
      * @return The sum of the two numbers, or null if either number is null.
      */
     public static Integer addition(Integer a, Integer b) {  
-        return null; // Replace null with the variable you used to store the result
+        if( a == null || b == null ){
+            return null;
+        }
+        Integer result;
+        result = a + b;
+        return result; // Replace null with the variable you used to store the result
     }
 
     /**
@@ -44,7 +49,10 @@ public with sharing class VariablesDataTypesOperators {
      * @return The difference between the two numbers.
      */
     public static Integer subtraction(Integer a, Integer b) {
-        return null; // Replace null with the variable you used to store the result
+        
+        Integer result;
+        result = a-b;
+        return result; // Replace null with the variable you used to store the result
     }
 
     /**
@@ -56,7 +64,9 @@ public with sharing class VariablesDataTypesOperators {
      * @return The product of the two numbers.
      */
     public static Integer multiplication(Integer a, Integer b) {
-        return null; // Replace null with the variable you used to store the result
+        Integer result;
+        result = a * b;
+        return result; // Replace null with the variable you used to store the result
     }
 
     /**
