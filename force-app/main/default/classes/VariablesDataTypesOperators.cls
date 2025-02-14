@@ -79,7 +79,12 @@ public with sharing class VariablesDataTypesOperators {
      * @return The quotient of the division, or 0 if the denominator is zero.
      */
     public static Double division(Double a, Double b) {
-        return null; // Replace null with the variable you used to store the result
+        Double result;
+        if ( b == 0){
+            return 0;
+        }
+        result = a / b ;
+        return result; // Replace null with the variable you used to store the result
     }
 
     /**
@@ -93,7 +98,13 @@ public with sharing class VariablesDataTypesOperators {
      * @return True if the number is even, False otherwise.
      */
     public static Boolean isEven(Integer num) {
-        return null; // Replace null with the variable you used to store the result
+        
+        Integer result = System.Math.mod(num,2);
+        if (result == 0) {
+            return True;
+        } else {return False;}
+
+        //return null; // Replace null with the variable you used to store the result
     }
 
     /**
