@@ -103,8 +103,6 @@ public with sharing class VariablesDataTypesOperators {
         if (result == 0) {
             return True;
         } else {return False;}
-
-        //return null; // Replace null with the variable you used to store the result
     }
 
     /**
@@ -119,7 +117,6 @@ public with sharing class VariablesDataTypesOperators {
         if (num >= 0){
             return True;
         } else {return False;}
-       // return null; // Replace null with the variable you used to store the result
     }
 
     /**
@@ -164,7 +161,6 @@ public with sharing class VariablesDataTypesOperators {
         if (dt < System.today()){
             return True;
         } else {return False;}
-        //return null; // Replace null with the variable you used to store the result
     }
 
     /**
@@ -180,7 +176,6 @@ public with sharing class VariablesDataTypesOperators {
         if (dt >= System.today()){
             return True;
         } else {return False;}
-        //return null; // Replace null with the variable you used to store the result
     }
 
     /**
